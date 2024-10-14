@@ -14,33 +14,33 @@ Implements the SARSA algorithm, where Q-values are updated using:
 ![image](https://github.com/user-attachments/assets/cb94e195-852a-40ee-9cb1-33fb343c7ee4)
 
 ## Code Structure
-teacher.py
+### teacher.py
 Implements the Teacher Agent, which knows the optimal policy for any given state. However, the teacher follows this policy only with a set probability.
 
-agent.py
+### agent.py
 Implements the SARSA Learning Agents, which learn based on their interactions with the environment (the game board).
 
-game.py
+### game.py
 Contains the main Game class, which handles the game logic and state management. The primary game loop is found in the playGame() method.
 
 ## Running the Program
 1. Train a New Agent with Teacher Guidance
 To train a new RL agent with the help of a teacher agent, use the -t flag followed by the number of game iterations you want to train:
 
-bash
-Sao chép mã
+```bash
 python play.py -a q -t 5000
+```
 In this example, the agent will be trained for 5000 games. In my training, I used 200,000 games:
 
-bash
-Sao chép mã
+```bash
 python play.py -a q -t 200000
+```
 2. Load a Trained Agent and View Reward History
 To load a pre-trained agent and view a plot of its cumulative reward history, run the following script:
 
-bash
-Sao chép mã
+```bash
 python plot_agent_reward.py -p q_agent.pkl
+```
 This will generate a plot showing how the agent's reward evolves over time.
 
 ## Result
