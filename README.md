@@ -28,18 +28,18 @@ Contains the main Game class, which handles the game logic and state management.
 To train a new RL agent with the help of a teacher agent, use the -t flag followed by the number of game iterations you want to train:
 
 ```bash
-python play.py -a q -t 5000
+python play.py -a s -t 5000
 ```
 In this example, the agent will be trained for 5000 games. In my training, I used 200,000 games:
 
 ```bash
-python play.py -a q -t 200000
+python play.py -a s -t 200000
 ```
 2. Load a Trained Agent and View Reward History
 To load a pre-trained agent and view a plot of its cumulative reward history, run the following script:
 
 ```bash
-python plot_agent_reward.py -p q_agent.pkl
+python plot_agent_reward.py -p sarsa_agent.pkl
 ```
 This will generate a plot showing how the agent's reward evolves over time.
 
