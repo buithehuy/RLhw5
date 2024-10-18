@@ -44,5 +44,5 @@ python plot_agent_reward.py -p sarsa_agent.pkl
 This will generate a plot showing how the agent's reward evolves over time.
 
 ## Result
-The reward plot illustrates how the agent learns and improves its strategy as it plays more games.
+The reward plot illustrates how the agent learns and improves its strategy as it plays more games. In each game, if win reward += 1, draw =0 and -= 1 if loss
 ![Figure_1](https://github.com/user-attachments/assets/a881cc5f-e0b2-4f39-83fc-6a86fb0d3f69)
